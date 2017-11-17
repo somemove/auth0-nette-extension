@@ -1,0 +1,1 @@
+# nette-auth0-extension
