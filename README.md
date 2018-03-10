@@ -37,21 +37,32 @@ auth0:
 	'persist_refresh_token': false
 	'persist_id_token': false
 	'store': false
+	'state_handler': false
 	'debug': true
 ```
+
+Following properties have defaults values in the extension and can be ommited in your configuration:
+
+* `persist_user`
+* `persist_access_token`
+* `persist_refresh_token`
+* `persist_id_token`
+* `store`
+* `state_handler`
+* `debug`
 
 ## Usage
 
 ```php
-class Your Service {
+class YourPresenter extends Presenter {
 
 	/**
-	 * @var \Auth0\SDK\Auth0
+	 * @var \Auth0\SDK\Auth0 @inject
 	 */
 	public $auth0;
 
-	public function __construct(\Auth0\SDK\Auth0 $auth0) {
-		$this->auth0 = $auth0;
+	public function actionLogin() {
+		$this->auth0->login();
 	}
 
 }

@@ -9,7 +9,7 @@
 		"di"
 	],
 	"type" : "library",
-	"version": "0.0.3",
+	"version": "1.0.0",
 	"authors": [
 		{
 			"name": "Josef Petrak",
@@ -17,7 +17,7 @@
 		}
 	],
 	"support": {
-		"issues": "https://github.com/somemove/nette-auth0-extension/issues",
+		"issues": "https://github.com/somemove/auth0-nette-extension/issues",
 		"email": "support@transit.systems"
 	},
 	"require": {
