@@ -3,6 +3,10 @@
 
 # Auth0 Nette Extension
 
+This is Auth0 authentication extension for [Nette framework](https://github.com/nette/nette).
+
+It integrates [Auth0 PHP SDK](https://github.com/auth0/auth0-php).
+
 ## Installation
 
 Download extension using Composer.
