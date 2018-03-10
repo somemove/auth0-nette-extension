@@ -18,15 +18,21 @@
 			'store' => false,
 			'debug' => false,
 		];
-		
+
+		protected $config;
+
 		public function loadConfiguration() {
+			$this->config = 
+				$this->validateConfig($this->defaults, $this->config);
+		}
+		
+		public function beforeCompile() {
 			$builder = $this->getContainerBuilder();
-			$config = $this->getConfig($this->defaults);
 
 			$builder
 				->addDefinition($this->prefix('auth0'))
 				->setClass('Auth0\SDK\Auth0')
-				->setArguments([$config]);
+				->setArguments([$this->config]);
 		}
 
 	}
