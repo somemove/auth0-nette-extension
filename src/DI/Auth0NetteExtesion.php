@@ -19,8 +19,6 @@
 			'debug' => false,
 		];
 
-		protected $config;
-
 		public function loadConfiguration() {
 			$config = $this->validateConfig($this->defaults);
 
