@@ -22,17 +22,14 @@
 		protected $config;
 
 		public function loadConfiguration() {
-			$this->config = 
-				$this->validateConfig($this->defaults, $this->config);
-		}
-		
-		public function beforeCompile() {
+			$config = $this->validateConfig($this->defaults);
+
 			$builder = $this->getContainerBuilder();
 
 			$builder
 				->addDefinition($this->prefix('auth0'))
-				->setClass('Auth0\SDK\Auth0')
-				->setArguments([$this->config]);
+				->setClass('Auth0\SDK\Auth0', [$config])
+			;
 		}
 
 	}
