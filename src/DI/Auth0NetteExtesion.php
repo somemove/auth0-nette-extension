@@ -10,10 +10,12 @@
 		public $defaults = [
 			'response_mode' => 'query',
 			'response_type' => 'code',
-			'persist_user' => true,
+			'persist_user' => false,
 			'persist_access_token' => false,
 			'persist_refresh_token' => false,
 			'persist_id_token' => false,
+			'state_handler' => false,
+			'store' => false,
 			'debug' => false,
 		];
 		
