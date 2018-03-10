@@ -1,6 +1,13 @@
 {
 	"name" : "somemove/auth0-nette-extension",
 	"description": "Auth0 Nette Extension",
+	"keywords": [
+		"php", 
+		"nette",
+		"auth0",
+		"extension",
+		"di"
+	],
 	"type" : "library",
 	"version": "0.0.0",
 	"authors": [
@@ -9,6 +16,10 @@
 			"email": "josef.petrak@somemove.ee"
 		}
 	],
+	"support": {
+		"issues": "https://github.com/somemove/nette-auth0-extension/issues",
+		"email": "support@transit.systems"
+	},
 	"require-dev": {
 		"php": "^7.1",
 		"auth0/auth0-php": "^5.0"
