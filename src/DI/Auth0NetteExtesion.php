@@ -10,6 +10,12 @@
 		public $defaults = [
 			'response_mode' => 'query',
 			'response_type' => 'code',
+			'domain' => NULL,
+			'audience' => NULL,
+			'scope' => NULL,
+			'client_id' => NULL,
+			'client_secret' => NULL,
+			'redirect_uri' => NULL,
 			'persist_user' => false,
 			'persist_access_token' => false,
 			'persist_refresh_token' => false,
