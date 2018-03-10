@@ -22,7 +22,7 @@
 			$config = $this->getConfig($this->defaults);
 
 			$builder
-				->addDefinition('auth0')
+				->addDefinition($this->prefix('auth0'))
 				->setClass('Auth0\SDK\Auth0')
 				->setArguments([$config]);
 		}
