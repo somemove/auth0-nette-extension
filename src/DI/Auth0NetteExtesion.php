@@ -1,11 +1,11 @@
 <?php declare(strict_types=1);
 
-	namespace Somemove\NetteAuth0\DI;
+	namespace Somemove\Auth0NetteExtesion\DI;
 
 	use \Nette\DI\Compiler;
 	use \Nette\DI\CompilerExtension;
 
-	final class NetteAuth0Extension extends CompilerExtension {
+	final class Auth0NetteExtesion extends CompilerExtension {
 
 		public $defaults = [
 			'response_mode' => 'query',

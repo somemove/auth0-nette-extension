@@ -1,5 +1,5 @@
-[![Latest Stable Version](https://poser.pugx.org/somemove/nette-auth0-extension/v/stable)](https://packagist.org/packages/somemove/nette-auth0-extension)
-[![Total Downloads](https://poser.pugx.org/somemove/nette-auth0-extension/downloads)](https://packagist.org/packages/somemove/nette-auth0-extension)
+[![Latest Stable Version](https://poser.pugx.org/somemove/auth0-nette-extension/v/stable)](https://packagist.org/packages/somemove/auth0-nette-extension)
+[![Total Downloads](https://poser.pugx.org/somemove/auth0-nette-extensionn/downloads)](https://packagist.org/packages/somemove/auth0-nette-extension)
 
 # Auth0 Nette Extension
 
@@ -8,12 +8,12 @@
 Download extension using Composer.
 
 ```
-composer require somemove/nette-auth0-extension
+composer require somemove/auth0-nette-extension
 ```
 
 ``` 
 extensions:
-	auth0: \Somemove\NetteAuth0\DI\NetteAuth0Extension
+	auth0: \Somemove\Auth0NetteExtesion\DI\Auth0NetteExtesion
 ```
 
 ## Configuration

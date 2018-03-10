@@ -27,7 +27,7 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"Somemove\\NetteAuth0\\": "src/"
+			"Somemove\\Auth0NetteExtesion\\": "src/"
 		}
 	}
 }
