@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-	namespace Somemove\NetteAuth0;
+	namespace Somemove\NetteAuth0\DI;
 
 	use \Nette\DI\Compiler;
 	use \Nette\DI\CompilerExtension;
