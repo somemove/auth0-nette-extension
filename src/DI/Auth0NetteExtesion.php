@@ -20,7 +20,7 @@
 			'persist_access_token' => true,
 			'persist_refresh_token' => true,
 			'persist_id_token' => true,
-			'state_handler' => true,
+			'state_handler' => false,
 			'store' => '@auth0.auth0storage',
 			'debug' => false,
 		];
