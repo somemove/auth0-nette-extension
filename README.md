@@ -1,5 +1,6 @@
 [![Latest Stable Version](https://poser.pugx.org/somemove/auth0-nette-extension/v/stable)](https://packagist.org/packages/somemove/auth0-nette-extension)
 [![Total Downloads](https://poser.pugx.org/somemove/auth0-nette-extensionn/downloads)](https://packagist.org/packages/somemove/auth0-nette-extension)
+[![License](https://poser.pugx.org/somemove/auth0-nette-extension/license)](https://packagist.org/packages/somemove/auth0-nette-extension)
 
 # Auth0 Nette Extension
 
