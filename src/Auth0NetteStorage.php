@@ -6,7 +6,7 @@
 	use \Nette\Http\Session;
 	use \Nette\Http\SessionSection;
 
-	class Auth0NetteStorage implements StoreInterface {
+	final class Auth0NetteStorage implements StoreInterface {
 
 		const AUTH0_SECTION = 'auth0';
 
