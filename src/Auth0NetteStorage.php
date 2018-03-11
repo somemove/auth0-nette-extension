@@ -25,7 +25,7 @@
 		public function get($key, $default = NULL) {
 			return $this->isStoreAvailable() && $this->getStore()->offsetExists($key) ?
 				$this->getStore()->$key :
-				NULL;
+				$default;
 		}
 
 		public function delete($key) {
