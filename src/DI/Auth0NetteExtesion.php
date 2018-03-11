@@ -16,12 +16,12 @@
 			'client_id' => NULL,
 			'client_secret' => NULL,
 			'redirect_uri' => NULL,
-			'persist_user' => false,
-			'persist_access_token' => false,
-			'persist_refresh_token' => false,
-			'persist_id_token' => false,
-			'state_handler' => false,
-			'store' => false,
+			'persist_user' => true,
+			'persist_access_token' => true,
+			'persist_refresh_token' => true,
+			'persist_id_token' => true,
+			'state_handler' => true,
+			'store' => '@auth0.auth0storage',
 			'debug' => false,
 		];
 
@@ -29,6 +29,10 @@
 			$config = $this->validateConfig($this->defaults);
 
 			$builder = $this->getContainerBuilder();
+
+			$builder
+				->addDefinition($this->prefix('auth0storage'))
+				->setClass('Somemove\Auth0NetteExtesion\Auth0NetteStorage');
 
 			$builder
 				->addDefinition($this->prefix('auth0'))

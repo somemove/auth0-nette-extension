@@ -9,7 +9,7 @@
 		"di"
 	],
 	"type" : "library",
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"authors": [
 		{
 			"name": "Josef Petrak",
@@ -23,6 +23,7 @@
 	"require": {
 		"php": "^7.1",
 		"nette/di": "^2.4",
+		"nette/http" : "^2.4",
 		"auth0/auth0-php": "^5.0"
 	},
 	"autoload": {

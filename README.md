@@ -32,13 +32,6 @@ auth0:
 	'client_id' : '{CLIENT_ID}'
 	'client_secret' : '{CLIENT_SECRET}'
 	'redirect_uri' : 'https://your.callback'
-	'persist_user' : false
-	'persist_access_token': false
-	'persist_refresh_token': false
-	'persist_id_token': false
-	'store': false
-	'state_handler': false
-	'debug': true
 ```
 
 Following properties have defaults values in the extension and can be ommited in your configuration:
@@ -50,6 +43,8 @@ Following properties have defaults values in the extension and can be ommited in
 * `store`
 * `state_handler`
 * `debug`
+
+In order to disable persistence of user, or tokens into Nette session object, either set `store` to `FALSE` for global setting or respective attribute to `FALSE`.
 
 ## Usage
 
