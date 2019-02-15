@@ -1,4 +1,5 @@
-<?php declare(strict_types=1);
+<?php 
+	declare(strict_types=1);
 
 	namespace Somemove\Auth0NetteExtesion;
 
@@ -42,5 +43,3 @@
 			return $this->session->getSection(self::AUTH0_SECTION);
 		}
 	}
-
-?>
