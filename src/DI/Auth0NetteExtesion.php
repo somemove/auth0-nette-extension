@@ -37,7 +37,7 @@
 
 			$builder
 				->addDefinition($this->prefix('auth0'))
-				->setClass('Auth0\SDK\Auth0', [$config])
+				->setFactory(Auth0\SDK\Auth0::class, [$config])
 			;
 		}
 
