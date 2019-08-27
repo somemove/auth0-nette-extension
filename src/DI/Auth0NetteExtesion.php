@@ -3,6 +3,7 @@
 
 	namespace Somemove\Auth0NetteExtesion\DI;
 
+	use \Auth0\SDK\Auth0;
 	use \Nette\DI\Compiler;
 	use \Nette\DI\CompilerExtension;
 
@@ -37,7 +38,7 @@
 
 			$builder
 				->addDefinition($this->prefix('auth0'))
-				->setFactory(Auth0\SDK\Auth0::class, [$config])
+				->setFactory(Auth0::class, [$config])
 			;
 		}
 
