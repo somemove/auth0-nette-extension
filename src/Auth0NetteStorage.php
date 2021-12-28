@@ -3,7 +3,7 @@
 
 	namespace Somemove\Auth0NetteExtesion;
 
-	use \Auth0\SDK\Store\StoreInterface;
+	use Auth0\SDK\Contract\StoreInterface;
 	use \Nette\Http\Session;
 	use \Nette\Http\SessionSection;
 
@@ -11,13 +11,13 @@
 
 		const AUTH0_SECTION = 'auth0';
 
-		private $session;
+		private Session $session;
 
 		public function __construct(Session $session) {
 			$this->session = $session;
 		}
 
-		public function set($key, $value) {
+		public function set($key, $value): void {
 			if ($this->isStoreAvailable()) {
 				$this->getStore()->offsetSet($key, $value);
 			}
@@ -29,7 +29,7 @@
 				$default;
 		}
 
-		public function delete($key) {
+		public function delete($key): void {
 			if ($this->isStoreAvailable()) {
 				$this->getStore()->offsetUnset($key);
 			}
@@ -39,7 +39,18 @@
 			return $this->session->isStarted();
 		}
 
+        /**
+         * @return SessionSection<mixed>
+         */
 		private function getStore(): SessionSection {
 			return $this->session->getSection(self::AUTH0_SECTION);
 		}
-	}
+
+        public function purge(): void
+        {
+        }
+
+        public function defer(bool $deferring): void
+        {
+        }
+    }

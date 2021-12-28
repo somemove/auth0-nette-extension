@@ -4,12 +4,12 @@
 	namespace Somemove\Auth0NetteExtesion\DI;
 
 	use \Auth0\SDK\Auth0;
-	use \Nette\DI\Compiler;
 	use \Nette\DI\CompilerExtension;
 
 	final class Auth0NetteExtesion extends CompilerExtension {
 
-		public $defaults = [
+		/** @var array<string, mixed> */
+		public array $defaults = [
 			'response_mode' => 'query',
 			'response_type' => 'code',
 			'domain' => NULL,
@@ -27,7 +27,7 @@
 			'debug' => false,
 		];
 
-		public function loadConfiguration() {
+		public function loadConfiguration(): void {
 			$config = $this->validateConfig($this->defaults);
 
 			$builder = $this->getContainerBuilder();
