@@ -36,10 +36,10 @@ jobs:
       run: vendor/bin/phpstan
       
     - name: Run Lint
-      run: vendor/bin/parallel-lint.bat --colors --show-deprecated src/
+      run: vendor/bin/parallel-lint --colors --show-deprecated src/
       
     - name: Run PHP CS Fixer
-      run: vendor/bin/php-cs-fixer.bat fix --dry-run --diff --format=txt --verbose
+      run: vendor/bin/php-cs-fixer fix --dry-run --diff --format=txt --verbose
 
     # Add a test script to composer.json, for instance: "test": "vendor/bin/phpunit"
     # Docs: https://getcomposer.org/doc/articles/scripts.md
