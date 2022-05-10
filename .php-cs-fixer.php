@@ -15,6 +15,8 @@ return (new PhpCsFixer\Config())
 		'@PHP71Migration' => true,
 		'@PHP73Migration' => true,
 		'@PHP74Migration' => true,
+		'@PHP80Migration' => true,
+		'@PHP81Migration' => true,
 		'@Symfony' => true,
 		'@Symfony:risky' => true,
 		'yoda_style' => false,
