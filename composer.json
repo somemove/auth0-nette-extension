@@ -22,7 +22,7 @@
 		"email": "office@somemove.ee"
 	},
 	"require": {
-		"php": ">=8.0",
+		"php": ">=8.1",
 		"nette/di": "3.0.*",
 		"nette/http" : "3.1.*",
 		"auth0/auth0-php": "8.2.0",
