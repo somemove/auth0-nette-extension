@@ -19,7 +19,7 @@
 	],
 	"support": {
 		"issues": "https://github.com/somemove/auth0-nette-extension/issues",
-		"email": "support@transit.systems"
+		"email": "office@somemove.ee"
 	},
 	"require": {
 		"php": ">=8.0",
