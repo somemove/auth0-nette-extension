@@ -24,7 +24,7 @@
 		"php": ">=8.1",
 		"nette/di": "^3.0",
 		"nette/http" : "^3.1",
-		"auth0/auth0-php": "^8.2.",
+		"auth0/auth0-php": "^8.2",
 		"php-http/guzzle7-adapter": "^1.0"
 	},
 	"require-dev": {
